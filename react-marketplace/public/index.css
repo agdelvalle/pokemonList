@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(249,250,251);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav, #sub-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav, #sub-nav, footer{
+    padding: 0 15%;
+}
+
+nav li, #sub-nav li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+nav{
+    flex-direction: row;
+    height: 48px;
+    background-color: rgba(157,23,77);
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-right: 5px;
+}
+
+#sub-nav{
+    background-color: white;
+    text-align: right;
+    padding: 8px 16px;
+    font-size: 14px;
+    justify-content: end;
+}
+
+#sub-nav a{
+    color: lightslategray;
+    margin-left: 10px;
+}
+
+#sub-nav a:hover{
+    color: rgba(157,23,77)
+}
+
+#main-container {
+    font-size: 16px;
+    margin: 24px 20%;
+}
+
+#main-container h1{
+    font-weight: 800;
+    font-size: 60px;
+}
+
+#pokemon-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+
+.pokemonRecord{
+    background-color: white;
+    margin: 10px 10px 10px 0px;
+    padding: 2.5rem;
+    border-radius: 4%;
+    flex-basis: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 14px;
+    text-align: center;
+    height: 290px;
+    width: 215px;
+    /* gap: calc(25% - 10px); */
+    gap: 25%;
+}
+
+.pokemonRecord img{
+    width: 128px;
+    height: 128px;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
+.name{
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+}
+
+.desc {
+    overflow: hidden;
+    max-height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    text-overflow:ellipsis;
+    color: rgb(107, 114, 128);
+    /* white-space: nowrap; */
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    /* position: absolute; */
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+#footer-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer h3{
+    color: black;
+}
+
+footer h4{
+    color: gray;
+}
+
+#copyright{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightslategray;
+}
